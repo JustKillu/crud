@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+#formulario, #lista {
+    width: 80%;
+    max-width: 400px;
+    margin: 3rem auto; /* Centra el formulario y la lista */
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+
+#formulario label, #lista li {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#formulario input[type="text"], #formulario input[type="submit"], #formulario button, #lista button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#formulario input[type="text"].editando {
+    border-color: red;
+}
+
+#formulario input[type="submit"], #formulario button, #lista button {
+    border: none;
+    color: #fff;
+    background-color: #007BFF;
+    cursor: pointer;
+}
+
+#formulario input[type="submit"]:hover, #formulario button:hover, #lista button:hover {
+    background-color: #0056b3;
+}
+
+@media screen and (max-width: 600px) {
+    #formulario, #lista {
+        width: 100%;
+    }
+}
